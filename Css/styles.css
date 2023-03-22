@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+@import './global.css';
+
+/*Caracteristicas Globales de la Pagina*/
+
+@font-face {
+    font-family: 'Roboto-Regular', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.body{
+    background-image: url(/assets/Curry.jpg);
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top top;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto-Regular';
+
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    font-family: 'Roboto-Regular';
+     color: white;
+     font-size: 60px;
+     height: 100px;
+    padding: 10px;
+}
+
+.navbar{
+    background-color: #f1c40f;
+    /*background-color: #222222;*/
+    font-family: 'Roboto-Regular';
+    font-weight: 600;
+}
+
+/*Corresponde al Navbar*/
+ul{
+    width: max-content;
+    margin: auto;
+}
+
+ul li a{
+    color: #4a4545!important;
+    font-family: 'Roboto-Regular';
+    font-weight: bolder;
+}
+
+/* Resalta el boton en el que ponemos el cursor*/
+ul li a:hover{
+    color: #121212 !important;
+
+}
+/*Creamos la propiedad active que resalta el boton que hayamos clickeado*/
+.active{
+    color: #121212 !important;
+    font-family: 'Roboto-Black';
+}
+
+.pageheading{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    width: max-content;
+    border-radius: 20px;
+    margin: auto;
+    background-color: rgb(0, 0, 0, 0.25);
+
+}
+
+/*Configuracion de la Barra de Redes Sociales*/
+.social{
+    position: fixed;
+    left: 0;
+    top: 300px;
+    z-index: 2000;
+}
+
+.social ul{
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.social ul li a{
+    
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease; 
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    width: 50px;
+
+}
+
+.social ul li a:hover{
+    padding: 10px 50px;
+    background: #000;
+}
+
+.social ul li .icon-instagram{
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), 
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), 
+    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.social ul li .icon-twitter{
+    background: #00abf0 ;
+    
+}
+.social ul li .icon-discord{
+    background: #5865f2;
+}
+
+label{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 30px;
+    text-align: center;
+
+}
+
+
+.NBAlogo{
+    
+    width: 140px;
+    height: 80px;
+}
+
+
+.footer{
+ height: 50px;
+ max-height: max-content;
+ align-items: center;
+ margin-top: auto;
+ background-color: #121212;
+ color: white;
+
+}
+
